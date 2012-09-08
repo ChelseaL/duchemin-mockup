@@ -4,6 +4,9 @@
 $('document').ready( function() {
 
   $('#search-accordion').collapse();
+  $('#search-accordion').on('show hide', function(e){
+    $(e.target).siblings('.accordion-heading').find('.accordion-toggle i').toggleClass('icon-minus icon-plus', 200);
+});
   $('#show-filter').button();
 
   // Toggle active class when button is clicked and trigger filter event
@@ -20,7 +23,7 @@ $('document').ready( function() {
       var hidden = $(this).hasClass('active') ? 1 : 0;
       $('.' + filter).animate( {opacity: hidden}, 'fast', 'swing' ); 
     }
-    
+
   });
 
 });

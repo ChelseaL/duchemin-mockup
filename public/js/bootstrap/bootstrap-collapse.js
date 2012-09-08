@@ -115,6 +115,7 @@
 
   , toggle: function () {
       this[this.$element.hasClass('in') ? 'hide' : 'show']()
+	  $(this).toggleClass("icon-minus icon-plus");
     }
 
   }
