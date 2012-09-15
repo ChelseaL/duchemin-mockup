@@ -14,9 +14,11 @@
   <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,600italic' rel='stylesheet' type='text/css'>
+  <link type="text/css" href="css/custom-theme/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+      
   <script src="js/vendor/modernizr-2.5.3.min.js"></script>
 </head>
-<body id="search-page">
+  <body  id="search-page">
 
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
   
@@ -78,7 +80,7 @@
     </div>
 
     <div id="main" class="container-fluid">
-      <div class="row-fluid">
+    <div class="row-fluid">
         <div class="span12">
           <div class="search-heading row-fluid">
             <h1 class="search-title page-title span8">Advanced Search</h1>
@@ -99,7 +101,6 @@
                   </div>
                   <div id="book-section" class="accordion-body collapse in">
                     <div class="accordion-inner">
-                    <label class="checkbox" for="bookany"><input type="checkbox" id="bookany" name="book" value="any" />Any</label>
                       <label class="checkbox" for="book1"><input type="checkbox" id="book1" name="book" value="premier livre" /> Premier livre contenant XXV chansons nouvelles</label>
                       <label class="checkbox" for="book2"><input type="checkbox" id="book2" name="book" value="second livre" /> Second livre contenant XXVI chansons nouvelles</label>
                       <label class="checkbox" for="book3"><input type="checkbox" id="book3" name="book" value="tiers livre" /> Tiers livre contenant XXII chansons nouvelles</label>
@@ -110,6 +111,7 @@
                     </div>
                   </div>
                 </div>
+                
                 <div class="accordion-group">
                   <div class="accordion-heading">
                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#search-accordion" href="#composer-section">
@@ -118,29 +120,29 @@
                   </div>
                   <div id="composer-section" class="accordion-body collapse">
                     <div class="accordion-inner">
-                      <label class="checkbox" id="composer_checkbox" for="composerany"><input type="checkbox" id="composerany" name="composer" value="Any" />Any</label>
-                      <label class="checkbox" id="composer_checkbox" for="composer1"><input type="checkbox" id="composer1" name="composer" value="Arcadelt, Jacques" />Arcadelt, Jacques</label>
-                      <label class="checkbox" id="composer_checkbox" for="composer2"><input type="checkbox" id="composer2" name="composer" value="Bastard, Jean" />Bastard, Jean</label>
-                      <label class="checkbox" id="composer_checkbox" for="composer3"><input type="checkbox" id="composer3" name="composer" value="Benoist, Ph." />Benoist, Ph.</label>
-                      <label class="checkbox" id="composer_checkbox" for="composer4"><input type="checkbox" id="composer4" name="composer" value="Bense, 	M." />Bense, 	M.</label>
-                      <label class="checkbox" id="composer_checkbox" id="composer_checkbox" for="composer5"><input type="checkbox" id="composer5" name="composer" value="Besancourt," />Besancourt,</label>
-                      <label class="checkbox" id="composer_checkbox" for="composer6"><input type="checkbox" id="composer6" name="composer" value="Bersoy, F." />Bersoy, F.</label>
-                      <label class="checkbox" id="composer_checkbox" for="composer7"><input type="checkbox" id="composer7" name="composer" value="Besse, P. de" />Besse, P. de</label>
-                      <label class="checkbox" id="composer_checkbox" for="composer8"><input type="checkbox" id="composer8" name="composer" value="Bisson, Loys" />Bisson, Loys</label>
-                      <label class="checkbox" id="composer_checkbox" for="composer9"><input type="checkbox" id="composer9" name="composer" value="Bonard, Laurent" />Bonard, Laurent</label>
-                      <label class="checkbox" id="composer_checkbox" for="composer10"><input type="checkbox" id="composer10" name="composer" value="Bonnefond , [Simon de]" />Bonnefond , [Simon de]</label>
-                      <label class="checkbox" id="composer_checkbox" for="composer11"><input type="checkbox" id="composer11" name="composer" value="Bourgeois, Loys" />Bourgeois, Loys</label>
-                      <label class="checkbox" id="composer_checkbox" for="composer12"><input type="checkbox" id="composer12" name="composer" value="Bracquet,Gilles" />Bracquet,Gilles</label>
-                      <label class="checkbox" id="composer_checkbox" for="composer13"><input type="checkbox" id="composer13" name="composer" value="Brigard" />Brigard</label>
-                      <label class="checkbox" id="composer_checkbox" for="composer14"><input type="checkbox" id="composer14" name="composer" value="Briault	,Ph." />Briault	,Ph.</label>
-                      <label class="checkbox" id="composer_checkbox" for="composer15"><input type="checkbox" id="composer15" name="composer" value="Caron" />Caron</label>
-                      <label class="checkbox" id="composer_checkbox" for="composer16"><input type="checkbox" id="composer16" name="composer" value="Cartier	, Antoine" />Cartier	, Antoine</label>
-                      <label class="checkbox" id="composer_checkbox" for="composer17"><input type="checkbox" id="composer17" name="composer" value="Certon, Pierre" />Certon, Pierre</label>
-                      <label class="checkbox" id="composer_checkbox" for="composer18"><input type="checkbox" id="composer18" name="composer" value="Clemens non Papa, Jacobus " />Clemens non Papa, Jacobus </label>
-                      <label class="checkbox" id="composer_checkbox" for="composer19"><input type="checkbox" id="composer19" name="composer" value="Clereau, Pierre" />Clereau, Pierre</label>
+                      <label class="checkbox" id="search_checkbox" for="composer1"><input type="checkbox" id="composer1" name="composer" value="Arcadelt, Jacques" />Arcadelt, Jacques</label>
+                      <label class="checkbox" id="search_checkbox" for="composer2"><input type="checkbox" id="composer2" name="composer" value="Bastard, Jean" />Bastard, Jean</label>
+                      <label class="checkbox" id="search_checkbox" for="composer3"><input type="checkbox" id="composer3" name="composer" value="Benoist, Ph." />Benoist, Ph.</label>
+                      <label class="checkbox" id="search_checkbox" for="composer4"><input type="checkbox" id="composer4" name="composer" value="Bense, 	M." />Bense, 	M.</label>
+                      <label class="checkbox" id="search_checkbox" id="search_checkbox" for="composer5"><input type="checkbox" id="composer5" name="composer" value="Besancourt," />Besancourt,</label>
+                      <label class="checkbox" id="search_checkbox" for="composer6"><input type="checkbox" id="composer6" name="composer" value="Bersoy, F." />Bersoy, F.</label>
+                      <label class="checkbox" id="search_checkbox" for="composer7"><input type="checkbox" id="composer7" name="composer" value="Besse, P. de" />Besse, P. de</label>
+                      <label class="checkbox" id="search_checkbox" for="composer8"><input type="checkbox" id="composer8" name="composer" value="Bisson, Loys" />Bisson, Loys</label>
+                      <label class="checkbox" id="search_checkbox" for="composer9"><input type="checkbox" id="composer9" name="composer" value="Bonard, Laurent" />Bonard, Laurent</label>
+                      <label class="checkbox" id="search_checkbox" for="composer10"><input type="checkbox" id="composer10" name="composer" value="Bonnefond , [Simon de]" />Bonnefond , [Simon de]</label>
+                      <label class="checkbox" id="search_checkbox" for="composer11"><input type="checkbox" id="composer11" name="composer" value="Bourgeois, Loys" />Bourgeois, Loys</label>
+                      <label class="checkbox" id="search_checkbox" for="composer12"><input type="checkbox" id="composer12" name="composer" value="Bracquet,Gilles" />Bracquet,Gilles</label>
+                      <label class="checkbox" id="search_checkbox" for="composer13"><input type="checkbox" id="composer13" name="composer" value="Brigard" />Brigard</label>
+                      <label class="checkbox" id="search_checkbox" for="composer14"><input type="checkbox" id="composer14" name="composer" value="Briault	,Ph." />Briault	,Ph.</label>
+                      <label class="checkbox" id="search_checkbox" for="composer15"><input type="checkbox" id="composer15" name="composer" value="Caron" />Caron</label>
+                      <label class="checkbox" id="search_checkbox" for="composer16"><input type="checkbox" id="composer16" name="composer" value="Cartier	, Antoine" />Cartier	, Antoine</label>
+                      <label class="checkbox" id="search_checkbox" for="composer17"><input type="checkbox" id="composer17" name="composer" value="Certon, Pierre" />Certon, Pierre</label>
+                      <label class="checkbox" id="search_checkbox" for="composer18"><input type="checkbox" id="composer18" name="composer" value="Clemens non Papa, Jacobus " />Clemens non Papa, Jacobus </label>
+                      <label class="checkbox" id="search_checkbox" for="composer19"><input type="checkbox" id="composer19" name="composer" value="Clereau, Pierre" />Clereau, Pierre</label>
                     </div>
                   </div>
                 </div>
+                
                 <div class="accordion-group">
                   <div class="accordion-heading">
                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#search-accordion" href="#contributor-section">
@@ -149,19 +151,18 @@
                   </div>
                   <div id="contributor-section" class="accordion-body collapse">
                     <div class="accordion-inner">
-                      <label class="checkbox" id="contributor_checkbox" for="contributorany"><input type="checkbox" id="contributorany" name="contributor" value="Any" />Any</label>
-                      <label class="checkbox" id="contributor_checkbox" for="contributor1"><input type="checkbox" id="contributor1" name="contributor" value="Buchanan, Christopher" />Buchanan, Christopher</label>
-                      <label class="checkbox" id="contributor_checkbox" for="contributor2"><input type="checkbox" id="contributor2" name="contributor" value="Clement, Deanna" />Clement, Deanna</label>
-                      <label class="checkbox" id="contributor_checkbox" for="contributor3"><input type="checkbox" id="contributor3" name="contributor" value="Greenberg, Jamie" />Greenberg, Jamie</label>
-                      <label class="checkbox" id="contributor_checkbox" for="contributor4"><input type="checkbox" id="contributor4" name="contributor" value="Herdman, Jessica" />Herdman, Jessica</label>
-                      <label class="checkbox" id="contributor_checkbox" for="contributor5"><input type="checkbox" id="contributor5" name="contributor" value="Belkot, John " />Belkot, John </label>
-                      <label class="checkbox" id="contributor_checkbox" for="contributor6"><input type="checkbox" id="contributor6" name="contributor" value="Holscher, Joshua" />Holscher, Joshua</label>
-                      <label class="checkbox" id="contributor_checkbox" for="contributor7"><input type="checkbox" id="contributor7" name="contributor" value="Apgar, Jamie" />Apgar, Jamie</label>
-                      <label class="checkbox" id="contributor_checkbox" for="contributor8"><input type="checkbox" id="contributor8" name="contributor" value="Quinn, Patrick" />Quinn, Patrick</label>
-                      <label class="checkbox" id="contributor_checkbox" for="contributor9"><input type="checkbox" id="contributor9" name="contributor" value="Derycz, Pierre" />Derycz, Pierre</label>
-                      <label class="checkbox" id="contributor_checkbox" for="contributor10"><input type="checkbox" id="contributor10" name="contributor" value="Magruder, Katherine" />Magruder, Katherine</label>
-                      <label class="checkbox" id="contributor_checkbox" for="contributor11"><input type="checkbox" id="contributor11" name="contributor" value="Saunders, Zoe" />Saunders, Zoe</label>
-                      <label class="checkbox" id="contributor_checkbox" for="contributor12"><input type="checkbox" id="contributor12" name="contributor" value="Freedman, Richard" />Freedman, Richard</label>
+                      <label class="checkbox" id="search_checkbox" for="contributor1"><input type="checkbox" id="contributor1" name="contributor" value="Buchanan, Christopher" />Buchanan, Christopher</label>
+                      <label class="checkbox" id="search_checkbox" for="contributor2"><input type="checkbox" id="contributor2" name="contributor" value="Clement, Deanna" />Clement, Deanna</label>
+                      <label class="checkbox" id="search_checkbox" for="contributor3"><input type="checkbox" id="contributor3" name="contributor" value="Greenberg, Jamie" />Greenberg, Jamie</label>
+                      <label class="checkbox" id="search_checkbox" for="contributor4"><input type="checkbox" id="contributor4" name="contributor" value="Herdman, Jessica" />Herdman, Jessica</label>
+                      <label class="checkbox" id="search_checkbox" for="contributor5"><input type="checkbox" id="contributor5" name="contributor" value="Belkot, John " />Belkot, John </label>
+                      <label class="checkbox" id="search_checkbox" for="contributor6"><input type="checkbox" id="contributor6" name="contributor" value="Holscher, Joshua" />Holscher, Joshua</label>
+                      <label class="checkbox" id="search_checkbox" for="contributor7"><input type="checkbox" id="contributor7" name="contributor" value="Apgar, Jamie" />Apgar, Jamie</label>
+                      <label class="checkbox" id="search_checkbox" for="contributor8"><input type="checkbox" id="contributor8" name="contributor" value="Quinn, Patrick" />Quinn, Patrick</label>
+                      <label class="checkbox" id="search_checkbox" for="contributor9"><input type="checkbox" id="contributor9" name="contributor" value="Derycz, Pierre" />Derycz, Pierre</label>
+                      <label class="checkbox" id="search_checkbox" for="contributor10"><input type="checkbox" id="contributor10" name="contributor" value="Magruder, Katherine" />Magruder, Katherine</label>
+                      <label class="checkbox" id="search_checkbox" for="contributor11"><input type="checkbox" id="contributor11" name="contributor" value="Saunders, Zoe" />Saunders, Zoe</label>
+                      <label class="checkbox" id="search_checkbox" for="contributor12"><input type="checkbox" id="contributor12" name="contributor" value="Freedman, Richard" />Freedman, Richard</label>
                     </div>
                   </div>
                 </div>
@@ -182,54 +183,542 @@
                           </div>
                           <div id="finalTone-section" class="accordion-body collapse">
                              <div class="accordion-inner">
-                                <label class="checkbox" for="finalToneany"><input type="checkbox" id="finalToneany" name="finalTone" value="Any" />Any</label>
-                                <label class="checkbox" for="finalTone1"><input type="checkbox" id="finalTone1" name="finalTone" value="C" />C</label>
-                                <label class="checkbox" for="finalTone2"><input type="checkbox" id="finalTone2" name="finalTone" value="D" />D</label>
-                                <label class="checkbox" for="finalTone3"><input type="checkbox" id="finalTone3" name="finalTone" value="E" />E</label>
-                                <label class="checkbox" for="finalTone4"><input type="checkbox" id="finalTone4" name="finalTone" value="F" />F</label>
-                                <label class="checkbox" for="finalTone5"><input type="checkbox" id="finalTone5" name="finalTone" value="G" />G</label>
-                                <label class="checkbox" for="finalTone6"><input type="checkbox" id="finalTone6" name="finalTone" value="A" />A</label>
-                                <label class="checkbox" for="finalTone7"><input type="checkbox" id="finalTone7" name="finalTone" value="B-flat" />B-flat</label>
+                                <label class="checkbox" for="finalTone1" id="search_checkbox"><input type="checkbox" id="finalTone1" name="finalTone" value="C" />C</label>
+                                <label class="checkbox" for="finalTone2" id="search_checkbox"><input type="checkbox" id="finalTone2" name="finalTone" value="D" />D</label>
+                                <label class="checkbox" for="finalTone3" id="search_checkbox"><input type="checkbox" id="finalTone3" name="finalTone" value="E" />E</label>
+                                <label class="checkbox" for="finalTone4" id="search_checkbox"><input type="checkbox" id="finalTone4" name="finalTone" value="F" />F</label>
+                                <label class="checkbox" for="finalTone5" id="search_checkbox"><input type="checkbox" id="finalTone5" name="finalTone" value="G" />G</label>
+                                <label class="checkbox" for="finalTone6" id="search_checkbox"><input type="checkbox" id="finalTone6" name="finalTone" value="A" />A</label>
+                                <label class="checkbox" for="finalTone7" id="search_checkbox"><input type="checkbox" id="finalTone7" name="finalTone" value="B-flat" />B-flat</label>
+
                              </div>
                           </div>
                        </div>
+                       
                        <div class="accordion-group">
                           <div class="accordion-heading">
                              <a class="accordion-toggle" data-toggle="collapse" data-parent="#cadences-accordion" href="#cadenceType-section"><span>Cadence Type</span><i class="icon-plus"></i></a>
                           </div>
                           <div id="cadenceType-section" class="accordion-body collapse">
                              <div class="accordion-inner">
-                                <label class="checkbox" for="cadenceTypeany"><input type="checkbox" id="cadenceTypeany" name="cadenceType" value="Any" />Any</label>
-                                <label class="checkbox" for="cadenceType1"><input type="checkbox" id="cadenceType1" name="cadenceType" value="Authentic" />Authentic</label>
-                                <label class="checkbox" for="cadenceType2"><input type="checkbox" id="cadenceType2" name="cadenceType" value="Plagal" />Plagal</label>
-                                <label class="checkbox" for="cadenceType3"><input type="checkbox" id="cadenceType3" name="cadenceType" value="Phrygian" />Phrygian</label>
-                                <label class="checkbox" for="cadenceType4"><input type="checkbox" id="cadenceType4" name="cadenceType" value="CadInCad" />CadInCad</label>
-                                <label class="checkbox" for="cadenceType5"><input type="checkbox" id="cadenceType5" name="cadenceType" value="CadenceNDLT" />CadenceNDLT</label>
-                                <label class="checkbox" for="cadenceType6"><input type="checkbox" id="cadenceType6" name="cadenceType" value="NoCadence" />NoCadence</label>
+                                <label class="checkbox" for="cadenceType1" id="search_checkbox"><input type="checkbox" id="cadenceType1" name="cadenceType" value="Authentic" />Authentic</label>
+                                <label class="checkbox" for="cadenceType2" id="search_checkbox"><input type="checkbox" id="cadenceType2" name="cadenceType" value="Plagal" />Plagal</label>
+                                <label class="checkbox" for="cadenceType3" id="search_checkbox"><input type="checkbox" id="cadenceType3" name="cadenceType" value="Phrygian" />Phrygian</label>
+                                <label class="checkbox" for="cadenceType4" id="search_checkbox"><input type="checkbox" id="cadenceType4" name="cadenceType" value="CadInCad" />CadInCad</label>
+                                <label class="checkbox" for="cadenceType5" id="search_checkbox"><input type="checkbox" id="cadenceType5" name="cadenceType" value="CadenceNDLT" />CadenceNDLT</label>
+                                <label class="checkbox" for="cadenceType6" id="search_checkbox"><input type="checkbox" id="cadenceType6" name="cadenceType" value="NoCadence" />NoCadence</label>
                              </div>
                           </div>
                        </div>
+                       
                         <div class="accordion-group">
                           <div class="accordion-heading">
                              <a class="accordion-toggle" data-toggle="collapse" data-parent="#cadences-accordion" href="#cadenceMods-section"><span>Cadence Modifiers</span><i class="icon-plus"></i></a>
                           </div>
                           <div id="cadenceMods-section" class="accordion-body collapse">
                              <div class="accordion-inner">
-                                 <label class="checkbox" for="cadenceModsany"><input type="checkbox" id="cadenceModsany" name="cadenceMods" value="Any" />Any</label>
-                                <label class="checkbox" for="cadenceMods1"><input type="checkbox" id="cadenceMods1" name="cadenceMods" value="Displaced" />Displaced</label>
-                                <label class="checkbox" for="cadenceMods2"><input type="checkbox" id="cadenceMods2" name="cadenceMods" value="Inverted" />Inverted</label>
-                                <label class="checkbox" for="cadenceMods3"><input type="checkbox" id="cadenceMods3" name="cadenceMods" value="Incomplete" />Incomplete</label>
-                                <label class="checkbox" for="cadenceMods4"><input type="checkbox" id="cadenceMods4" name="cadenceMods" value="Evaded" />Evaded</label>
-                                <label class="checkbox" for="cadenceMods5"><input type="checkbox" id="cadenceMods5" name="cadenceMods" value="Doubtful" />Doubtful</label>
+                                <label class="checkbox" for="cadenceMods1" id="search_checkbox"><input type="checkbox" id="cadenceMods1" name="cadenceMods" value="Displaced" />Displaced</label>
+                                <label class="checkbox" for="cadenceMods2" id="search_checkbox"><input type="checkbox" id="cadenceMods2" name="cadenceMods" value="Inverted" />Inverted</label>
+                                <label class="checkbox" for="cadenceMods3" id="search_checkbox"><input type="checkbox" id="cadenceMods3" name="cadenceMods" value="Incomplete" />Incomplete</label>
+                                <label class="checkbox" for="cadenceMods4" id="search_checkbox"><input type="checkbox" id="cadenceMods4" name="cadenceMods" value="Evaded" />Evaded</label>
+                                <label class="checkbox" for="cadenceMods5" id="search_checkbox"><input type="checkbox" id="cadenceMods5" name="cadenceMods" value="Doubtful" />Doubtful</label>
                              </div>
                           </div>
                        </div>
-                      </div>
+                      
+                      <div class="accordion-group">
+                          <div class="accordion-heading">
+                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#cadences-accordion" href="#cadenceVoices-section"><span>Cadence Voices</span><i class="icon-plus"></i></a>
+                          </div>
+                          <div id="cadenceVoices-section" class="accordion-body collapse">
+                             <div class="accordion-inner">
+                                 <center>
+                                 <table cellpadding="5">
+                                   <tr><th></th><th>S</th><th>Ct</th><th>T</th><th>B</th><th>None</th></tr>
+                                   <tr><th align="right">Cantizans</th>
+                                       <td><input type="radio" name="cadenceVoices" id="cadenceVoices1" value="Cantizans_S" checked></td>
+                                       <td><input type="radio" name="cadenceVoices" id="cadenceVoices2" value="Cantizans_Ct" checked></td>
+                                       <td><input type="radio" name="cadenceVoices" id="cadenceVoices3" value="Cantizans_T" checked></td>
+                                       <td><input type="radio" name="cadenceVoices" id="cadenceVoices4" value="Cantizans_B" checked></td>
+                                       <td><input type="radio" name="cadenceVoices" id="cadenceVoices5" value="None" checked></td>
+                                   </tr>
+                                   <tr><th align="right">Tenorizans</th>
+                                       <td><input type="radio" name="cadenceVoices" id="cadenceVoices6" value="Tenorizans_S" checked></td>
+                                       <td><input type="radio" name="cadenceVoices" id="cadenceVoices7" value="Tenorizans_Ct" checked></td>
+                                       <td><input type="radio" name="cadenceVoices" id="cadenceVoices8" value="Tenorizans_T" checked></td>
+                                       <td><input type="radio" name="cadenceVoices" id="cadenceVoices9" value="Tenorizans_B" checked></td>
+                                       <td><input type="radio" name="cadenceVoices" id="cadenceVoices10" value="None" checked></td>
+                                   </tr>
+                                 </table>
+                                 </center>
+                             </div>
+                          </div>
+                         </div>
+                       </div>
                 
                     </div>
                   </div>
                 </div>
                 
+                                
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#search-accordion" href="#intervalPats-section">
+                      <span>Interval Patterns</span><i class="icon-plus"></i>
+                    </a>
+                  </div>
+                  <div id="intervalPats-section" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                      
+                      <div class="accordion" id="intervals-accordion">
+                       <div class="accordion-group">
+                          <div class="accordion-heading">
+                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#intervals-accordion" href="#pSixths-section"><span>Parallel 6ths</span><i class="icon-plus"></i></a>
+                          </div>
+                          <div id="pSixths-section" class="accordion-body collapse">
+                             <div class="accordion-inner">
+                                <center>
+                                 <table cellpadding="5">
+                                   <tr><th></th><th>S</th><th>Ct</th><th>T</th><th>B</th><th>None</th></tr>
+                                   <tr><th align="right">Upper Voices</th>
+                                       <td><input type="radio" name="pSixths" id="pSixths1" value="Upper_S" checked></td>
+                                       <td><input type="radio" name="pSixths" id="pSixths2" value="Upper_Ct" checked></td>
+                                       <td><input type="radio" name="pSixths" id="pSixths3" value="Upper_T" checked></td>
+                                       <td><input type="radio" name="pSixths" id="pSixths4" value="Upper_B" checked></td>
+                                       <td><input type="radio" name="pSixths" id="pSixths5" value="None" checked></td>
+                                   </tr>
+                                   <tr><th align="right">Lower Voices</th>
+                                       <td><input type="radio" name="pSixths" id="pSixths6" value="Lower_S" checked></td>
+                                       <td><input type="radio" name="pSixths" id="pSixths7" value="Lower_Ct" checked></td>
+                                       <td><input type="radio" name="pSixths" id="pSixths8" value="Lower_T" checked></td>
+                                       <td><input type="radio" name="pSixths" id="pSixths9" value="Lower_B" checked></td>
+                                       <td><input type="radio" name="pSixths" id="pSixths10" value="None" checked></td>
+                                   </tr>
+                                 </table>
+                                 </center>
+
+                             </div>
+                          </div>
+                        </div>
+                        
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#intervals-accordion" href="#pThirds-section"><span>Parallel 3rds</span><i class="icon-plus"></i></a>
+                          </div>
+                          <div id="pThirds-section" class="accordion-body collapse">
+                             <div class="accordion-inner">
+                                <center>
+                                 <table cellpadding="5">
+                                   <tr><th></th><th>S</th><th>Ct</th><th>T</th><th>B</th><th>None</th></tr>
+                                   <tr><th align="right">Upper Voices</th>
+                                       <td><input type="radio" name="pThirds" id="pThirds1" value="Upper_S" checked></td>
+                                       <td><input type="radio" name="pThirds" id="pThirds2" value="Upper_Ct" checked></td>
+                                       <td><input type="radio" name="pThirds" id="pThirds3" value="Upper_T" checked></td>
+                                       <td><input type="radio" name="pThirds" id="pThirds4" value="Upper_B" checked></td>
+                                       <td><input type="radio" name="pThirds" id="pThirds5" value="None" checked></td>
+                                   </tr>
+                                   <tr><th align="right">Lower Voices</th>
+                                       <td><input type="radio" name="pThirds" id="pThirds6" value="Lower_S" checked></td>
+                                       <td><input type="radio" name="pThirds" id="pThirds7" value="Lower_Ct" checked></td>
+                                       <td><input type="radio" name="pThirds" id="pThirds8" value="Lower_T" checked></td>
+                                       <td><input type="radio" name="pThirds" id="pThirds9" value="Lower_B" checked></td>
+                                       <td><input type="radio" name="pThirds" id="pThirds10" value="None" checked></td>
+                                   </tr>
+                                 </table>
+                                 </center>
+
+                             </div>
+                          </div>
+                        </div>
+                        
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#intervals-accordion" href="#alternating-section"><span>Alternating 5ths/3rds</span><i class="icon-plus"></i></a>
+                          </div>
+                          <div id="alternating-section" class="accordion-body collapse">
+                             <div class="accordion-inner">
+                                <center>
+                                 <table cellpadding="5">
+                                   <tr><th></th><th>S</th><th>Ct</th><th>T</th><th>B</th><th>None</th></tr>
+                                   <tr><th align="right">Upper Voices</th>
+                                       <td><input type="radio" name="alternating" id="alternating1" value="Upper_S" checked></td>
+                                       <td><input type="radio" name="alternating" id="alternating2" value="Upper_Ct" checked></td>
+                                       <td><input type="radio" name="alternating" id="alternating3" value="Upper_T" checked></td>
+                                       <td><input type="radio" name="alternating" id="alternating4" value="Upper_B" checked></td>
+                                       <td><input type="radio" name="alternating" id="alternating5" value="None" checked></td>
+                                   </tr>
+                                   <tr><th align="right">Lower Voices</th>
+                                       <td><input type="radio" name="alternating" id="alternating6" value="Lower_S" checked></td>
+                                       <td><input type="radio" name="alternating" id="alternating7" value="Lower_Ct" checked></td>
+                                       <td><input type="radio" name="alternating" id="alternating8" value="Lower_T" checked></td>
+                                       <td><input type="radio" name="alternating" id="alternating9" value="Lower_B" checked></td>
+                                       <td><input type="radio" name="alternating" id="alternating10" value="None" checked></td>
+                                   </tr>
+                                 </table>
+                                 </center>
+
+                             </div>
+                          </div>
+                        </div>
+                        
+                         <div class="accordion-group">
+                          <div class="accordion-heading">
+                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#intervals-accordion" href="#intervalsOther-section"><span>Other Options</span><i class="icon-plus"></i></a>
+                          </div>
+                          <div id="intervalsOther-section" class="accordion-body collapse">
+                             <div class="accordion-inner">
+                                <label class="checkbox" id="search_checkbox" for="intervalsOther1"><input type="checkbox" id="intervalsOther1" name="intervalsOther" value="Romanesca" />Romanesca</label>
+                             </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#search-accordion" href="#presentationTypes-section">
+                      <span>Presentation Types</span><i class="icon-plus"></i>
+                    </a>
+                  </div>
+                  <div id="presentationTypes-section" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                      <div class="accordion" id="presentationTypes-accordion">
+                                                  
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#presentationTypes-accordion" href="#nonImitativeDuo-section"><span>Non Imitative Duo</span><i class="icon-plus"></i></a>
+                          </div>
+                          <div id="nonImitativeDuo-section" class="accordion-body collapse">
+                             <div class="accordion-inner">
+                                <center>
+                                 <table cellpadding="5">
+                                   <tr><th></th><th>S</th><th>Ct</th><th>T</th><th>B</th><th>None</th></tr>
+                                   <tr><th align="right">Upper Voices 1</th>
+                                       <td><input type="radio" name="nonImitativeDuo" id="nonImitativeDuo1" value="Upper1_S" checked></td>
+                                       <td><input type="radio" name="nonImitativeDuo" id="nonImitativeDuo2" value="Upper1_Ct" checked></td>
+                                       <td><input type="radio" name="nonImitativeDuo" id="nonImitativeDuo3" value="Upper1_T" checked></td>
+                                       <td><input type="radio" name="nonImitativeDuo" id="nonImitativeDuo4" value="Upper1_B" checked></td>
+                                       <td><input type="radio" name="nonImitativeDuo" id="nonImitativeDuo5" value="None" checked></td>
+                                   </tr>
+                                   <tr><th align="right">Lower Voices 1</th>
+                                       <td><input type="radio" name="nonImitativeDuo" id="nonImitativeDuo6" value="Lower1_S" checked></td>
+                                       <td><input type="radio" name="nonImitativeDuo" id="nonImitativeDuo7" value="Lower1_Ct" checked></td>
+                                       <td><input type="radio" name="nonImitativeDuo" id="nonImitativeDuo8" value="Lower1_T" checked></td>
+                                       <td><input type="radio" name="nonImitativeDuo" id="nonImitativeDuo9" value="Lower1_B" checked></td>
+                                       <td><input type="radio" name="nonImitativeDuo" id="nonImitativeDuo10" value="None" checked></td>
+                                   </tr>
+                                   <tr><th align="right">Upper Voices 2</th>
+                                       <td><input type="radio" name="nonImitativeDuo" id="nonImitativeDuo11" value="Upper2_S" checked></td>
+                                       <td><input type="radio" name="nonImitativeDuo" id="nonImitativeDuo12" value="Upper2_Ct" checked></td>
+                                       <td><input type="radio" name="nonImitativeDuo" id="nonImitativeDuo13" value="Upper2_T" checked></td>
+                                       <td><input type="radio" name="nonImitativeDuo" id="nonImitativeDuo14" value="Upper2_B" checked></td>
+                                       <td><input type="radio" name="nonImitativeDuo" id="nonImitativeDuo15" value="None" checked></td>
+                                   </tr>
+                                   <tr><th align="right">Lower Voices 2</th>
+                                       <td><input type="radio" name="nonImitativeDuo" id="nonImitativeDuo16" value="Lower2_S" checked></td>
+                                       <td><input type="radio" name="nonImitativeDuo" id="nonImitativeDuo17" value="Lower2_Ct" checked></td>
+                                       <td><input type="radio" name="nonImitativeDuo" id="nonImitativeDuo18" value="Lower2_T" checked></td>
+                                       <td><input type="radio" name="nonImitativeDuo" id="nonImitativeDuo19" value="Lower2_B" checked></td>
+                                       <td><input type="radio" name="nonImitativeDuo" id="nonImitativeDuo20" value="None" checked></td>
+                                   </tr>
+                                 </table>
+                                 </center>
+
+                             </div>
+                          </div>
+                        </div>
+                                                                          
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#presentationTypes-accordion" href="#freeImitation-section"><span>Free Imitation</span><i class="icon-plus"></i></a>
+                          </div>
+                          <div id="freeImitation-section" class="accordion-body collapse">
+                             <div class="accordion-inner">
+                                <center>
+                                 <table cellpadding="5">
+                                   <tr><th></th><th>S</th><th>Ct</th><th>T</th><th>B</th><th>None</th></tr>
+                                   <tr><th align="right">Dux</th>
+                                       <td><input type="radio" name="freeImitation" id="freeImitation1" value="Dux_S" checked></td>
+                                       <td><input type="radio" name="freeImitation" id="freeImitation2" value="Dux_Ct" checked></td>
+                                       <td><input type="radio" name="freeImitation" id="freeImitation3" value="Dux_T" checked></td>
+                                       <td><input type="radio" name="freeImitation" id="freeImitation4" value="Dux_B" checked></td>
+                                       <td><input type="radio" name="freeImitation" id="freeImitation5" value="None" checked></td>
+                                   </tr>
+                                   <tr><th align="right">Comes</th>
+                                       <td><input type="radio" name="freeImitation" id="freeImitation6" value="Comes_S" checked></td>
+                                       <td><input type="radio" name="freeImitation" id="freeImitation7" value="Comes_Ct" checked></td>
+                                       <td><input type="radio" name="freeImitation" id="freeImitation8" value="Comes_T" checked></td>
+                                       <td><input type="radio" name="freeImitation" id="freeImitation9" value="Comes_B" checked></td>
+                                       <td><input type="radio" name="freeImitation" id="freeImitation10" value="None" checked></td>
+                                   </tr>
+                                 </table>
+                                 </center>
+                                 <br />
+                                 <div id="subCheckboxes">
+                                <p> Comes Voice Enters:  </p><label class="checkbox" id="search_checkbox" for="freeImitationCheck1"><input type="checkbox" id="freeImitationCheck1" name="freeImitationCheck" value="@1 or 8" />@1 or 8</label>
+                                 <label class="checkbox" id="search_checkbox" for="freeImitationCheck2"><input type="checkbox" id="freeImitationCheck2" name="freeImitationCheck" value="@5" />@5</label>
+                                 <label class="checkbox" id="search_checkbox" for="freeImitationCheck3"><input type="checkbox" id="freeImitationCheck3" name="freeImitationCheck" value="Above" />Above</label>
+                                 <label class="checkbox" id="search_checkbox" for="freeImitationCheck4"><input type="checkbox" id="freeImitationCheck4" name="freeImitationCheck" value="Below" />Below</label></div>
+                                
+                             </div>
+                          </div>
+                        </div>
+                        
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#presentationTypes-accordion" href="#imitativeDuet-section"><span>Imitative Duet</span><i class="icon-plus"></i></a>
+                          </div>
+                          <div id="imitativeDuet-section" class="accordion-body collapse">
+                             <div class="accordion-inner">
+                                <center>
+                                 <table cellpadding="5">
+                                   <tr><th></th><th>S</th><th>Ct</th><th>T</th><th>B</th><th>None</th></tr>
+                                   <tr><th align="right">Dux 1</th>
+                                       <td><input type="radio" name="imitativeDuet" id="imitativeDuet1" value="Dux1_S" checked></td>
+                                       <td><input type="radio" name="imitativeDuet" id="imitativeDuet2" value="Dux1_Ct" checked></td>
+                                       <td><input type="radio" name="imitativeDuet" id="imitativeDuet3" value="Dux1_T" checked></td>
+                                       <td><input type="radio" name="imitativeDuet" id="imitativeDuet4" value="Dux1_B" checked></td>
+                                       <td><input type="radio" name="imitativeDuet" id="imitativeDuet5" value="None" checked></td>
+                                   </tr>
+                                   <tr><th align="right">Comes 1</th>
+                                       <td><input type="radio" name="imitativeDuet" id="imitativeDuet6" value="Comes1_S" checked></td>
+                                       <td><input type="radio" name="imitativeDuet" id="imitativeDuet7" value="Comes1_Ct" checked></td>
+                                       <td><input type="radio" name="imitativeDuet" id="imitativeDuet8" value="Comes1_T" checked></td>
+                                       <td><input type="radio" name="imitativeDuet" id="imitativeDuet9" value="Comes1_B" checked></td>
+                                       <td><input type="radio" name="imitativeDuet" id="imitativeDuet10" value="None" checked></td>
+                                   </tr>
+                                   <tr><th align="right">Dux 2</th>
+                                       <td><input type="radio" name="imitativeDuet" id="imitativeDuet11" value="Dux2_S" checked></td>
+                                       <td><input type="radio" name="imitativeDuet" id="imitativeDuet12" value="Dux2_Ct" checked></td>
+                                       <td><input type="radio" name="imitativeDuet" id="imitativeDuet13" value="Dux2_T" checked></td>
+                                       <td><input type="radio" name="imitativeDuet" id="imitativeDuet14" value="Dux2_B" checked></td>
+                                       <td><input type="radio" name="imitativeDuet" id="imitativeDuet15" value="None" checked></td>
+                                   </tr>
+                                   <tr><th align="right">Comes 2</th>
+                                       <td><input type="radio" name="imitativeDuet" id="imitativeDuet16" value="Comes2_S" checked></td>
+                                       <td><input type="radio" name="imitativeDuet" id="imitativeDuet17" value="Comes2_Ct" checked></td>
+                                       <td><input type="radio" name="imitativeDuet" id="imitativeDuet18" value="Comes2_T" checked></td>
+                                       <td><input type="radio" name="imitativeDuet" id="imitativeDuet19" value="Comes2_B" checked></td>
+                                       <td><input type="radio" name="imitativeDuet" id="imitativeDuet20" value="None" checked></td>
+                                   </tr>
+                                 </table>
+                                 </center>
+                                 <br />
+                                 <div id="subCheckboxes">
+                                <p> Comes 1 or 2 Voice Enters:  </p><label class="checkbox" id="search_checkbox" for="freeImitationCheck1"><input type="checkbox" id="freeImitationCheck1" name="freeImitationCheck" value="@1 or 8" />@1 or 8</label>
+                                 <label class="checkbox" id="search_checkbox" for="freeImitationCheck2"><input type="checkbox" id="freeImitationCheck2" name="freeImitationCheck" value="@5" />@5</label>
+                                 <label class="checkbox" id="search_checkbox" for="freeImitationCheck3"><input type="checkbox" id="freeImitationCheck3" name="freeImitationCheck" value="Above" />Above</label>
+                                 <label class="checkbox" id="search_checkbox" for="freeImitationCheck4"><input type="checkbox" id="freeImitationCheck4" name="freeImitationCheck" value="Below" />Below</label>
+                                 <br /><br />
+                                 <p> Dux 2 Voice Enters:  </p><label class="checkbox" id="search_checkbox" for="freeImitationCheck5"><input type="checkbox" id="freeImitationCheck5" name="freeImitationCheck" value="@1 or 8" />@1 or 8</label>
+                                 <label class="checkbox" id="search_checkbox" for="freeImitationCheck6"><input type="checkbox" id="freeImitationCheck6" name="freeImitationCheck" value="@5" />@5</label>
+                                 <label class="checkbox" id="search_checkbox" for="freeImitationCheck7"><input type="checkbox" id="freeImitationCheck7" name="freeImitationCheck" value="Above" />Above</label>
+                                 <label class="checkbox" id="search_checkbox" for="freeImitationCheck8"><input type="checkbox" id="freeImitationCheck8" name="freeImitationCheck" value="Below" />Below</label>
+                                 <br /><br />
+                                 <p> Other Options:  </p><label class="checkbox" id="search_checkbox" for="freeImitationCheck9"><input type="checkbox" id="freeImitationCheck9" name="freeImitationCheck" value="Stretto Fuga" />Stretto Fuga</label>
+                                 <label class="checkbox" id="search_checkbox" for="freeImitationCheck10"><input type="checkbox" id="freeImitationCheck10" name="freeImitationCheck" value="Invertible Counterpoint" />Invertible Counterpoint</label></div>
+                                
+                             </div>
+                          </div>
+                        </div>
+                        
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#presentationTypes-accordion" href="#periodicEntry-section"><span>Periodic Entry</span><i class="icon-plus"></i></a>
+                          </div>
+                          <div id="periodicEntry-section" class="accordion-body collapse">
+                             <div class="accordion-inner">
+                                <center>
+                                 <table cellpadding="5">
+                                   <tr><th></th><th>S</th><th>Ct</th><th>T</th><th>B</th><th>None</th></tr>
+                                   <tr><th align="right">Dux 1</th>
+                                       <td><input type="radio" name="periodicEntry" id="periodicEntry1" value="Dux1_S" checked></td>
+                                       <td><input type="radio" name="periodicEntry" id="periodicEntry2" value="Dux1_Ct" checked></td>
+                                       <td><input type="radio" name="periodicEntry" id="periodicEntry3" value="Dux1_T" checked></td>
+                                       <td><input type="radio" name="periodicEntry" id="periodicEntry4" value="Dux1_B" checked></td>
+                                       <td><input type="radio" name="periodicEntry" id="periodicEntry5" value="None" checked></td>
+                                   </tr>
+                                   <tr><th align="right">Comes 1</th>
+                                       <td><input type="radio" name="periodicEntry" id="periodicEntry6" value="Comes1_S" checked></td>
+                                       <td><input type="radio" name="periodicEntry" id="periodicEntry7" value="Comes1_Ct" checked></td>
+                                       <td><input type="radio" name="periodicEntry" id="periodicEntry8" value="Comes1_T" checked></td>
+                                       <td><input type="radio" name="periodicEntry" id="periodicEntry9" value="Comes1_B" checked></td>
+                                       <td><input type="radio" name="periodicEntry" id="periodicEntry10" value="None" checked></td>
+                                   </tr>
+                                   <tr><th align="right">Dux 2</th>
+                                       <td><input type="radio" name="periodicEntry" id="periodicEntry11" value="Dux2_S" checked></td>
+                                       <td><input type="radio" name="periodicEntry" id="periodicEntry12" value="Dux2_Ct" checked></td>
+                                       <td><input type="radio" name="periodicEntry" id="periodicEntry13" value="Dux2_T" checked></td>
+                                       <td><input type="radio" name="periodicEntry" id="periodicEntry14" value="Dux2_B" checked></td>
+                                       <td><input type="radio" name="periodicEntry" id="periodicEntry15" value="None" checked></td>
+                                   </tr>
+                                   <tr><th align="right">Comes 2</th>
+                                       <td><input type="radio" name="periodicEntry" id="periodicEntry16" value="Comes2_S" checked></td>
+                                       <td><input type="radio" name="periodicEntry" id="periodicEntry17" value="Comes2_Ct" checked></td>
+                                       <td><input type="radio" name="periodicEntry" id="periodicEntry18" value="Comes2_T" checked></td>
+                                       <td><input type="radio" name="periodicEntry" id="periodicEntry19" value="Comes2_B" checked></td>
+                                       <td><input type="radio" name="periodicEntry" id="periodicEntry20" value="None" checked></td>
+                                   </tr>
+                                 </table>
+                                 </center>
+                                 <br />
+                                 <div id="subCheckboxes">
+                                <p> Comes 1 or 2 Voice Enters:  </p><label class="checkbox" id="search_checkbox" for="periodicEntryCheck1"><input type="checkbox" id="periodicEntryCheck1" name="periodicEntryCheck" value="@1 or 8" />@1 or 8</label>
+                                 <label class="checkbox" id="search_checkbox" for="periodicEntryCheck2"><input type="checkbox" id="periodicEntryCheck2" name="periodicEntryCheck" value="@5" />@5</label>
+                                 <label class="checkbox" id="search_checkbox" for="periodicEntryCheck3"><input type="checkbox" id="periodicEntryCheck3" name="periodicEntryCheck" value="Above" />Above</label>
+                                 <label class="checkbox" id="search_checkbox" for="periodicEntryCheck4"><input type="checkbox" id="periodicEntryCheck4" name="periodicEntryCheck" value="Below" />Below</label>
+                                 <br /><br />
+                                 <p> Dux 2 Voice Enters:  </p><label class="checkbox" id="search_checkbox" for="periodicEntryCheck5"><input type="checkbox" id="periodicEntryCheck5" name="periodicEntryCheck" value="@1 or 8" />@1 or 8</label>
+                                 <label class="checkbox" id="search_checkbox" for="periodicEntryCheck6"><input type="checkbox" id="periodicEntryCheck6" name="periodicEntryCheck" value="@5" />@5</label>
+                                 <label class="checkbox" id="search_checkbox" for="periodicEntryCheck7"><input type="checkbox" id="periodicEntryCheck7" name="periodicEntryCheck" value="Above" />Above</label>
+                                 <label class="checkbox" id="search_checkbox" for="periodicEntryCheck8"><input type="checkbox" id="periodicEntryCheck8" name="periodicEntryCheck" value="Below" />Below</label>
+                                 <br /><br />
+                                 <p> Other Options:  </p><label class="checkbox" id="search_checkbox" for="freeImitationCheck9"><input type="checkbox" id="periodicEntryCheck9" name="periodicEntryCheck" value="Stretto Fuga" />Stretto Fuga</label>
+                                 <label class="checkbox" id="search_checkbox" for="periodicEntryCheck10"><input type="checkbox" id="periodicEntryCheck10" name="periodicEntryCheck" value="Invertible Counterpoint" />Invertible Counterpoint</label></div>
+                                
+                             </div>
+                          </div>
+                        </div>
+                        
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#presentationTypes-accordion" href="#periodicTonal-section"><span>Periodic Entry Tonal</span><i class="icon-plus"></i></a>
+                          </div>
+                          <div id="periodicTonal-section" class="accordion-body collapse">
+                             <div class="accordion-inner">
+                                <center>
+                                 <table cellpadding="5">
+                                   <tr><th></th><th>S</th><th>Ct</th><th>T</th><th>B</th><th>None</th></tr>
+                                   <tr><th align="right">Dux 1</th>
+                                       <td><input type="radio" name="periodicTonal" id="periodicTonal1" value="Dux1_S" checked></td>
+                                       <td><input type="radio" name="periodicTonal" id="periodicTonal2" value="Dux1_Ct" checked></td>
+                                       <td><input type="radio" name="periodicTonal" id="periodicTonal3" value="Dux1_T" checked></td>
+                                       <td><input type="radio" name="periodicTonal" id="periodicTonal4" value="Dux1_B" checked></td>
+                                       <td><input type="radio" name="periodicTonal" id="periodicTonal5" value="None" checked></td>
+                                   </tr>
+                                   <tr><th align="right">Comes 1</th>
+                                       <td><input type="radio" name="periodicTonal" id="periodicTonal6" value="Comes1_S" checked></td>
+                                       <td><input type="radio" name="periodicTonal" id="periodicTonal7" value="Comes1_Ct" checked></td>
+                                       <td><input type="radio" name="periodicTonal" id="periodicTonal8" value="Comes1_T" checked></td>
+                                       <td><input type="radio" name="periodicTonal" id="periodicTonal9" value="Comes1_B" checked></td>
+                                       <td><input type="radio" name="periodicTonal" id="periodicTonal10" value="None" checked></td>
+                                   </tr>
+                                   <tr><th align="right">Dux 2</th>
+                                       <td><input type="radio" name="periodicTonal" id="periodicTonal11" value="Dux2_S" checked></td>
+                                       <td><input type="radio" name="periodicTonal" id="periodicTonal12" value="Dux2_Ct" checked></td>
+                                       <td><input type="radio" name="periodicTonal" id="periodicTonal13" value="Dux2_T" checked></td>
+                                       <td><input type="radio" name="periodicTonal" id="periodicTonal14" value="Dux2_B" checked></td>
+                                       <td><input type="radio" name="periodicTonal" id="periodicTonal15" value="None" checked></td>
+                                   </tr>
+                                   <tr><th align="right">Comes 2</th>
+                                       <td><input type="radio" name="periodicTonal" id="periodicTonal16" value="Comes2_S" checked></td>
+                                       <td><input type="radio" name="periodicTonal" id="periodicTonal17" value="Comes2_Ct" checked></td>
+                                       <td><input type="radio" name="periodicTonal" id="periodicTonal18" value="Comes2_T" checked></td>
+                                       <td><input type="radio" name="periodicTonal" id="periodicTonal19" value="Comes2_B" checked></td>
+                                       <td><input type="radio" name="periodicTonal" id="periodicTonal20" value="None" checked></td>
+                                   </tr>
+                                 </table>
+                                 </center>
+                                 <br />
+                                 <div id="subCheckboxes">
+                                <p> Comes 1 or 2 Voice Enters:  </p><label class="checkbox" id="search_checkbox" for="periodicTonalCheck1"><input type="checkbox" id="periodicTonalCheck1" name="periodicTonalCheck" value="@1 or 8" />@1 or 8</label>
+                                 <label class="checkbox" id="search_checkbox" for="periodicTonalCheck2"><input type="checkbox" id="periodicTonalCheck2" name="periodicTonalCheck" value="@5" />@5</label>
+                                 <label class="checkbox" id="search_checkbox" for="periodicTonalCheck3"><input type="checkbox" id="periodicTonalCheck3" name="periodicTonalCheck" value="Above" />Above</label>
+                                 <label class="checkbox" id="search_checkbox" for="periodicTonalCheck4"><input type="checkbox" id="periodicTonalCheck4" name="periodicTonalCheck" value="Below" />Below</label>
+                                 <br /><br />
+                                 <p> Dux 2 Voice Enters:  </p><label class="checkbox" id="search_checkbox" for="periodicTonalCheck5"><input type="checkbox" id="periodicTonalCheck5" name="periodicTonalCheck" value="@1 or 8" />@1 or 8</label>
+                                 <label class="checkbox" id="search_checkbox" for="periodicTonalCheck6"><input type="checkbox" id="periodicTonalCheck6" name="periodicTonalCheck" value="@5" />@5</label>
+                                 <label class="checkbox" id="search_checkbox" for="periodicTonalCheck7"><input type="checkbox" id="periodicTonalCheck7" name="periodicTonalCheck" value="Above" />Above</label>
+                                 <label class="checkbox" id="search_checkbox" for="periodicTonalCheck8"><input type="checkbox" id="periodicTonalCheck8" name="periodicTonalCheck" value="Below" />Below</label>
+                                 <br /><br />
+                                 <p> Other Options:  </p><label class="checkbox" id="search_checkbox" for="periodicTonalCheck9"><input type="checkbox" id="periodicTonalCheck9" name="periodicTonalCheck" value="Stretto Fuga" />Stretto Fuga</label>
+                                 <label class="checkbox" id="search_checkbox" for="periodicTonalCheck10"><input type="checkbox" id="periodicTonalCheck10" name="periodicTonalCheck" value="Invertible Counterpoint" />Invertible Counterpoint</label></div>
+                                
+                             </div>
+                          </div>
+                        </div>
+                        
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#presentationTypes-accordion" href="#periodicStacked-section"><span>Periodic Entry Stacked</span><i class="icon-plus"></i></a>
+                          </div>
+                          <div id="periodicStacked-section" class="accordion-body collapse">
+                             <div class="accordion-inner">
+                                <center>
+                                 <table cellpadding="5">
+                                   <tr><th></th><th>S</th><th>Ct</th><th>T</th><th>B</th><th>None</th></tr>
+                                   <tr><th align="right">Dux 1</th>
+                                       <td><input type="radio" name="periodicStacked" id="periodicStacked1" value="Dux1_S" checked></td>
+                                       <td><input type="radio" name="periodicStacked" id="periodicStacked2" value="Dux1_Ct" checked></td>
+                                       <td><input type="radio" name="periodicStacked" id="periodicStacked3" value="Dux1_T" checked></td>
+                                       <td><input type="radio" name="periodicStacked" id="periodicStacked4" value="Dux1_B" checked></td>
+                                       <td><input type="radio" name="periodicStacked" id="periodicStacked5" value="None" checked></td>
+                                   </tr>
+                                   <tr><th align="right">Comes 1</th>
+                                       <td><input type="radio" name="periodicStacked" id="periodicStacked6" value="Comes1_S" checked></td>
+                                       <td><input type="radio" name="periodicStacked" id="periodicStacked7" value="Comes1_Ct" checked></td>
+                                       <td><input type="radio" name="periodicStacked" id="periodicStacked8" value="Comes1_T" checked></td>
+                                       <td><input type="radio" name="periodicStacked" id="periodicStacked9" value="Comes1_B" checked></td>
+                                       <td><input type="radio" name="periodicStacked" id="periodicStacked10" value="None" checked></td>
+                                   </tr>
+                                   <tr><th align="right">Dux 2</th>
+                                       <td><input type="radio" name="periodicStacked" id="periodicStacked11" value="Dux2_S" checked></td>
+                                       <td><input type="radio" name="periodicStacked" id="periodicStacked12" value="Dux2_Ct" checked></td>
+                                       <td><input type="radio" name="periodicStacked" id="periodicStacked13" value="Dux2_T" checked></td>
+                                       <td><input type="radio" name="periodicStacked" id="periodicStacked14" value="Dux2_B" checked></td>
+                                       <td><input type="radio" name="periodicStacked" id="periodicStacked15" value="None" checked></td>
+                                   </tr>
+                                   <tr><th align="right">Comes 2</th>
+                                       <td><input type="radio" name="periodicStacked" id="periodicStacked16" value="Comes2_S" checked></td>
+                                       <td><input type="radio" name="periodicStacked" id="periodicStacked17" value="Comes2_Ct" checked></td>
+                                       <td><input type="radio" name="periodicStacked" id="periodicStacked18" value="Comes2_T" checked></td>
+                                       <td><input type="radio" name="periodicStacked" id="periodicStacked19" value="Comes2_B" checked></td>
+                                       <td><input type="radio" name="periodicStacked" id="periodicStacked20" value="None" checked></td>
+                                   </tr>
+                                 </table>
+                                 </center>
+                                 <br />
+                                 <div id="subCheckboxes">
+                                <p> Comes 1 or 2 Voice Enters:  </p><label class="checkbox" id="search_checkbox" for="periodicStackedCheck1"><input type="checkbox" id="periodicStackedCheck1" name="periodicStackedCheck" value="@1 or 8" />@1 or 8</label>
+                                 <label class="checkbox" id="search_checkbox" for="periodicStackedCheck2"><input type="checkbox" id="periodicStackedCheck2" name="periodicStackedCheck" value="@5" />@5</label>
+                                 <label class="checkbox" id="search_checkbox" for="periodicStackedCheck3"><input type="checkbox" id="periodicStackedCheck3" name="periodicStackedCheck" value="Above" />Above</label>
+                                 <label class="checkbox" id="search_checkbox" for="periodicStackedCheck4"><input type="checkbox" id="periodicStackedCheck4" name="periodicStackedCheck" value="Below" />Below</label>
+                                 <br /><br />
+                                 <p> Dux 2 Voice Enters:  </p><label class="checkbox" id="search_checkbox" for="periodicStackedCheck5"><input type="checkbox" id="periodicStackedCheck5" name="periodicStackedCheck" value="@1 or 8" />@1 or 8</label>
+                                 <label class="checkbox" id="search_checkbox" for="periodicStackedCheck6"><input type="checkbox" id="periodicStackedCheck6" name="periodicStackedCheck" value="@5" />@5</label>
+                                 <label class="checkbox" id="search_checkbox" for="periodicStackedCheck7"><input type="checkbox" id="periodicStackedCheck7" name="periodicStackedCheck" value="Above" />Above</label>
+                                 <label class="checkbox" id="search_checkbox" for="periodicStackedCheck8"><input type="checkbox" id="periodicStackedCheck8" name="periodicStackedCheck" value="Below" />Below</label>
+                                 <br /><br />
+                                 <p> Other Options:  </p><label class="checkbox" id="search_checkbox" for="periodicStackedCheck9"><input type="checkbox" id="periodicStackedCheck9" name="periodicStackedCheck" value="Stretto Fuga" />Stretto Fuga</label>
+                                 <label class="checkbox" id="search_checkbox" for="periodicStackedCheck10"><input type="checkbox" id="periodicStackedCheck10" name="periodicStackedCheck" value="Invertible Counterpoint" />Invertible Counterpoint</label></div>
+                                
+                             </div>
+                          </div>
+                        </div>
+   
+                         <div class="accordion-group">
+                          <div class="accordion-heading">
+                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#presentationTypes-accordion" href="#presentationOther-section"><span>Other Options</span><i class="icon-plus"></i></a>
+                          </div>
+                          <div id="presentationOther-section" class="accordion-body collapse">
+                             <div class="accordion-inner">
+                                <label class="checkbox" id="search_checkbox" for="presentationOther1"><input type="checkbox" id="presentationOther1" name="presentationOther" value="HR Simple" />HR Simple</label>
+                                <label class="checkbox" id="search_checkbox" for="presentationOther2"><input type="checkbox" id="presentationOther2" name="presentationOther" value="HR Dactyll" />HR Dactyll</label>
+                                <label class="checkbox" id="search_checkbox" for="presentationOther3"><input type="checkbox" id="presentationOther3" name="presentationOther" value="HR Stagger" />HR Stagger</label>
+                                <label class="checkbox" id="search_checkbox" for="presentationOther4"><input type="checkbox" id="presentationOther4" name="presentationOther" value="HR Dance" />HR Dance</label>
+                                <label class="checkbox" id="search_checkbox" for="presentationOther5"><input type="checkbox" id="presentationOther5" name="presentationOther" value="HR Fauxbourdon" />HR Fauxbourdon</label>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
                 <div class="accordion-group">
                   <div class="accordion-heading">
                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#search-accordion" href="#texttone-section">
@@ -238,12 +727,11 @@
                   </div>
                   <div id="texttone-section" class="accordion-body collapse">
                     <div class="accordion-inner">
-                      <label class="checkbox" id="contributor_checkbox" for="texttoneany"><input type="checkbox" id="texttoneany" name="texttone" value="Any" />Any</label>
-                      <label class="checkbox" id="contributor_checkbox" for="texttone1"><input type="checkbox" id="texttone1" name="texttone" value="Text Representation" />Text Representation</label>
-                      <label class="checkbox" id="contributor_checkbox" for="texttone2"><input type="checkbox" id="texttone2" name="texttone" value="Text Declamation" />Text Declamation</label>
-                      <label class="checkbox" id="contributor_checkbox" for="texttone3"><input type="checkbox" id="texttone3" name="texttone" value="Text Overlap" />Text Overlap</label>
-                      <label class="checkbox" id="contributor_checkbox" for="texttone4"><input type="checkbox" id="texttone4" name="texttone" value="Text Paus" />Text Paus</label>
-                      <label class="checkbox" id="contributor_checkbox" for="texttone5"><input type="checkbox" id="texttone5" name="texttone" value="Text Enjambement" />Text Enjambement</label>
+                      <label class="checkbox" id="search_checkbox" for="texttone1"><input type="checkbox" id="texttone1" name="texttone" value="Text Representation" />Text Representation</label>
+                      <label class="checkbox" id="search_checkbox" for="texttone2"><input type="checkbox" id="texttone2" name="texttone" value="Text Declamation" />Text Declamation</label>
+                      <label class="checkbox" id="search_checkbox" for="texttone3"><input type="checkbox" id="texttone3" name="texttone" value="Text Overlap" />Text Overlap</label>
+                      <label class="checkbox" id="search_checkbox" for="texttone4"><input type="checkbox" id="texttone4" name="texttone" value="Text Pause" />Text Pause</label>
+                      <label class="checkbox" id="search_checkbox" for="texttone5"><input type="checkbox" id="texttone5" name="texttone" value="Text Enjambement" />Text Enjambement</label>
                   </div>
                 </div>
               </div>
@@ -257,40 +745,36 @@
                   </div>
                   <div id="form-section" class="accordion-body collapse">
                     <div class="accordion-inner">
-                      <label class="checkbox" id="contributor_checkbox" for="form1"><input type="checkbox" id="form1" name="form" value="Direct Repeat" />Direct Repeat</label>
-                      <label class="checkbox" id="contributor_checkbox" for="form2"><input type="checkbox" id="form2" name="form" value="Refrain" />Refrain</label>
-                      <label class="checkbox" id="contributor_checkbox" for="form3"><input type="checkbox" id="form3" name="form" value="Da Capo" />Da Capo</label>
-                      <label class="checkbox" id="contributor_checkbox" for="form4"><input type="checkbox" id="form4" name="form" value="Final Repeat" />Final Repeat</label>
+                    <label class="radio inline" id="search_radios">Exact<input type="radio" name="form" id="formRadio1" value="Exact" checked></label>
+                    <label class="radio inline" id="search_radios">Varied<input type="radio" name="form" id="formRadio2" value="Exact" ></label>
+                    <br /><br />
+                      <label class="checkbox" id="search_checkbox" for="form1"><input type="checkbox" id="form1" name="form" value="Direct Repeat" />Direct Repeat</label>
+                      <label class="checkbox" id="search_checkbox" for="form2"><input type="checkbox" id="form2" name="form" value="Refrain" />Refrain</label>
+                      <label class="checkbox" id="search_checkbox" for="form3"><input type="checkbox" id="form3" name="form" value="Da Capo" />Da Capo</label>
+                      <label class="checkbox" id="search_checkbox" for="form4"><input type="checkbox" id="form4" name="form" value="Final Repeat" />Final Repeat</label>
                   </div>
                 </div>
               </div>
               
-                                <div class="accordion-group">
+                 <div class="accordion-group">
                   <div class="accordion-heading">
                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#search-accordion" href="#date-section">
                       <span>Date</span><i class="icon-plus"></i>
                     </a>
                   </div>
                   <div id="date-section" class="accordion-body collapse">
-                    <div class="accordion-inner">
-                       <table class="table">
-                         <thead>
-					      <tr>
-						    <th>Start date 
-                                <input type="text" class="span2" value="02/16/12" data-date-format="mm/dd/yy" id="dp2" >
-                            </th>
-						    <th>End date
-                                <input type="text" class="span2" value="02/16/12" data-date-format="mm/dd/yy" id="dp2" >
-                            </th>
-					      </tr>
-				         </thead>
-                         <tbody><tr><td></td><td></td></tr></tbody>
-			          </table>
-            
+                    <div class="accordion-inner">        
+                      <!--[if IE]>
+                        <link rel="stylesheet" type="text/css" href="css/custom-theme/jquery.ui.1.8.16.ie.css"/>
+                      <![endif]-->
+                      <p><label id="dateLabel" for="amount">Date Range:</label><input type="text" id="amount" style="border:0; color:#f6931f; font-weight:bold;" />
+                      </p>
+                      <div id="slider-range"></div>
                     </div>
                   </div>
                 </div>
-                
+                       
+                       
               </div>
               <div class="search-buttons">
                 <button class="btn btn-large btn-inverse">Search</button>
@@ -305,11 +789,11 @@
           </div><!--/row-->
         </div><!--/span-->
       </div><!--/row-->
-
-      <hr>
-
+   <br />
+   
       <footer id="footer">
         <div class="row-fluid">
+        <div class="accordion-inner">  
           <h2>Created through the generous support of</h2>
         </div><!--/row-->
         <div class="row-fluid">
@@ -320,8 +804,8 @@
         <hr>
         <p class="copyright">&copy; Copyright goes here 2012</p>
       </footer>
-
-    </div><!--/.fluid-container-->
+          
+   </div><!--/.fluid-container-->
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.7.2.min.js"><\/script>')</script>
@@ -341,5 +825,11 @@
   <script src="js/main.js"></script>
   <!-- end scripts -->
 
-</body>
+  <!-- Date Slider -->
+  <script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+  <!-- End Date Slider -->
+
+
+  </body>
 </html>

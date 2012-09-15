@@ -2,7 +2,21 @@
 
 */
 $('document').ready( function() {
-
+  
+  //Date Slider
+  $( "#slider-range" ).slider({
+			range: true,
+			min: 1549,
+			max: 1568,
+			values: [ 1549, 1568 ],
+			slide: function( event, ui ) {
+				$( "#amount" ).val( ui.values[ 0 ] + " - " + ui.values[ 1 ] );
+			}
+		});
+   $( "#amount" ).val( $( "#slider-range" ).slider( "values", 0 ) +
+			" - " + $( "#slider-range" ).slider( "values", 1 ) );		
+  //End Date Slider
+  
   $('#search-accordion').collapse();
   $('#search-accordion').on('show hide', function(e){
     $(e.target).siblings('.accordion-heading').find('.accordion-toggle i').toggleClass('icon-minus icon-plus', 200);
