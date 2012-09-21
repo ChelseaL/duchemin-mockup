@@ -31,7 +31,7 @@ $('document').ready( function() {
   // Toggle opacity or display of elements when buttons are activated
   $('#show-filter .btn').bind( 'filterView', function(e) {
     var filter = $(this).attr('id').split('-btn')[0];
-    if( filter == 'commonplaces' ) {
+    if( filter == 'analysis' ) {
       $('.' + filter).toggle('fast', 'swing');
     } else {
       var hidden = $(this).hasClass('active') ? 1 : 0;

@@ -110,17 +110,31 @@ a.accordion-toggle:hover span{text-decoration:underline;}
 #main .nav-tabs li a { font-size: 15px; font-weight: bold; line-height: 23px; }
 .favorite h3, .result h3 { font-family: "crimson text", Georgia, serif;  font-size: 23px; text-transform: none; }
 
+#sidebar .btn {margin-bottom:5px;}
+.table td {font-size: 10pt;}
+.table td i {padding-right: 5px; padding-bottom: 3px;}
+.table td a:hover {text-decoration:none;}
+.table td a span {color:#2266aa }
+.table td a:hover span {text-decoration:underline;}
+
 /* ITEM DISPLAY */
-.commonplaces.span12 { display: none; margin-left: 0; }
-.commonplaces ul { margin-left: 0; }
-.commonplaces li  { display: inline; margin-right: 1em; }
+.analysis.span12 { display: none; margin-left: 0; }
+.analysis ul { margin-left: 0; }
+.analysis li  { display: inline; margin-right: 1em; }
+.reconstructions.span12 { display: none; margin-left: 0; }
+.reconstructions ul { margin-left: 0; }
+.reconstructions li  { display: inline; margin-right: 1em; }
 
 .line { display: inline-block; margin-bottom: 1.2em; width: 100%; }
 .measure { color: #7a7a7a; font-size: 14px; }
 .rhyme { color: #646464; font-size: 14px; }
 .line-text { font-family: "crimson text", Georgia, serif;  font-size: 20px; text-transform: none; }
-.notation-dropdown { float: right; margin-top: -2px; }
+.addFavorites { float: right; margin-top: -2px; }
+.addFavorites a:hover{text-decoration:none;}
+.addFavorites a span{color:#2266aa}
+.addFavorites a:hover span {text-decoration:underline;}
 
+ 
 /* FOOTER */
 .copyright { color: #777; text-align: center; }
 
